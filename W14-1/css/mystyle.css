@@ -1,0 +1,78 @@
+h1
+{
+  font-size: 50;
+  text-align: center;
+  border-bottom: 1px gray solid;
+  padding: 20px;
+  margin: 0px;
+  background-color:blanchedalmond;
+}
+
+ul
+{
+ border-right: 1px solid gray;
+ width: 100px;
+ height: 900px;
+ padding: 20px;
+ margin: 0px;
+ background-color: rgb(255, 226, 181);
+}
+
+body
+{
+  font-size: 20px;
+  margin: 0px;
+
+}
+
+input
+{
+align-self: end;
+font-size: 20px;
+color: blueviolet;
+}
+p
+{
+font-size: 20px;
+}
+#grid
+{ 
+ display: grid;
+ grid-template-columns: 150px 1fr; 
+}
+@media(max-width:768px) 
+{
+  #grid{
+  display: block;
+}
+#grid ul{
+  border-right: none;
+  height: 100px;
+  width: 768px;
+}
+h1{
+  border-right: none;/* 주석 */
+}
+}
+@media(max-width:320px)
+{
+  #grid{
+  display: block;
+}
+#grid ul{
+  border-right: none;
+  text-align: center;
+  width: 320px;
+}
+h1{
+  border-right: none;/* 주석 */
+}
+body
+{
+  font-size: 10px;
+  margin: 0px;
+  text-align: center;
+}
+img
+{align-self: center;}
+}
